@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@media(min-width: 10px)
+{
+    #showcase
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-inline: 1rem;
+        padding-block: 2rem;
+        text-align: center;
+        position: relative;
+        width: 100vw;
+
+            .container
+            {
+                display: grid;
+                grid-template-columns: 1fr;
+                padding: 0rem;
+                width: 100%;
+
+
+                .content
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 1rem;
+                    width: 100%;
+    
+                    .showcase-headline
+                    {
+                        font-family: "Rubik", sans-serif;
+                        font-size: 2rem;
+                        color: #0B0F19;
+                        font-weight: 800;
+                        line-height: 3rem;
+                    }
+
+                    p{
+                        margin-block: 2rem;
+                    }
+    
+                    .btn-theme-s.showcasebtn
+                    {
+                        margin-block: 1rem;
+                    }
+                }
+    
+                .lower-content
+                {
+                    padding-top: 1rem;
+    
+                    .logocontainer
+                    {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        row-gap: 1rem;
+                        justify-items: center;
+                        padding-bottom: 2rem;
+                    }
+                }
+            }
+
+        .background-image
+        {
+            position: absolute;
+            height: 50%;
+            right: 0%;
+            bottom: 0%;
+            z-index: -1;
+            opacity: 0.2;
+        }
+    } 
+}
+
+@media(min-width: 1620px)
+{
+    #showcase
+    {
+       position: relative;
+       display: flex;
+       justify-content: center;
+       padding-inline: 19rem;
+       text-align: left;
+
+            .container
+            {
+                display: flex;
+                flex-direction: column;
+                padding: 0rem;
+                padding-right: 5rem;
+                padding-bottom: 16rem;
+
+                .content
+                {
+                    display: block;
+                    padding-block: 7rem;
+                    padding-right: 5rem;
+                    padding-left: 0rem;
+    
+                    .showcase-headline
+                    {
+                        font-family: "Rubik", sans-serif;
+                        font-size: 3rem;
+                        color: #0B0F19;
+                        font-weight: 800;
+                        line-height: 3.6rem;
+                    }
+
+                    p{
+                        margin-block: 2rem;
+                    }
+    
+                    .btn-theme-s.showcasebtn
+                    {
+                        margin-top: 1rem;
+                        width: 40%;
+                    }
+                }
+    
+                .lower-content
+                {
+                    padding-top: 6rem;
+    
+                    .logocontainer
+                    {
+                        grid-template-columns: 1fr 1fr 1fr 1fr;
+                        margin-top: 2rem;
+                        justify-items: left       ;
+                    }
+                }
+            }
+
+        .background-image
+        {
+            position: absolute;
+            height: 100%;
+            right: 0%;
+            bottom: 0%;
+            z-index: 0;
+            opacity: 1;
+        }    
+    }    
+}
+
