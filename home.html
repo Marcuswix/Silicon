@@ -14,19 +14,19 @@
 </head>
 <body>
 
-    <wrapper class="wrapper">
+    <wrapper id="wrapper" class="wrapper">
         <header>
             <div class="container">
-                <a id="logo" href="home.html"><img src="images/solid.svg" alt="logtype"></a>
-    
-                <div id="menu">
+                <a class="logo" href="home.html"><img src="images/solid.svg" alt="logotype"></a>
+        
+                <div class="menu">
                     <nav>
                         <a class="menu-link" href="#showcase">Overview</a>
                         <a class="menu-link" href="#features">Features</a>
                         <a class="menu-link" href="#contact.html">Contact</a>
                     </nav>
                 </div>
-    
+        
                 <div class="btn-switch">
                     <label>Light</label>
                     <label class="switch" for="switch-mode">
@@ -35,51 +35,64 @@
                     </label>
                     <label>Dark</label>
                 </div>
-    
+        
+                <div class="menuBarsContainer">
+                    <i id="hamburger" class="fa-solid fa-bars"></i>
+                    <div id="menu-mobil" class="mobil-menu">
+                        <ul>
+                            <a class="menu-link" href="#showcase"><li>Overview</li></a>
+                            <a class="menu-link" href="#features"><li>Features</li></a>
+                            <a href="#"><li>Contact</li></a>
+                        </ul> 
+                    </div>
+                </div>
+        
                 <div class="account-buttons">
                     <a class="btn-gray" href="#"><i class="fa-regular fa-right-to-bracket"></i><span>Sign In</span></a>
                     <a class="btn-theme" href="#"><i class="fa-regular fa-user"></i><span>Sign Up</span></a>
                 </div>
             </div>
         </header>
-    
-        <main>
-            <section id="showcase">
-                <img class="background-image" src="images/showcase-taskmaster.svg">
+
+        <main id="main" class="">
+            <section id="showcase" class="section-margin">              
                 <div class="container">
                     <div class="content">
-                        <h8 class="showcase-headline">Task Management Assistant You Gonna Love</h8>
+                        <h1 class="showcase-headline">Task Management Assistant You Gonna Love</h1>
                         <p>We offer you a new generation of task management system. Plan, manage & track all your tasks in one flexible tool.</p>
-                        <a class="btn-theme-s showcasebtn" href="#">Get started for free</a>   
-                    </div>  
-                    <div class="lower-content">
-                        <h6>Largest companies use our tool to work efficiently</h6>
-                        <div class="logocontainer">
-                            <img src="images/logoipsum1.svg" alt="A logotype">
-                            <img src="images/logoipsum2.svg" alt="A logotype">
-                            <img src="images/logoipsum3.svg" alt="A logotype">
-                            <img src="images/logoipsum4.svg" alt="A logotype">
+                        <a class="btn-theme-s" href="#">Get started for free</a>
+                        
+                        <div class="lower-content">
+                            <h6>Largest companies use our tool to work efficiently</h6>
+                            <div class="logocontainer">
+                                <img src="images/logoipsum1.svg" alt="A logotype">
+                                <img src="images/logoipsum2.svg" alt="A logotype">
+                                <img src="images/logoipsum3.svg" alt="A logotype">
+                                <img src="images/logoipsum4.svg" alt="A logotype">
+                            </div>
                         </div>
+                        
+                    </div>  
+                    <div class="image-container">
+                        <img class="background-image" src="images/showcase-taskmaster.svg" alt="A picture on the dashboard" />
                     </div>
-                </div>
-                <div class="container">
                 </div>
             </section>
     
-            <section id="features">
+            <section id="features" class="section-margin">
                 <div class="container">
                     <h1>What Do You Get with Our Tool?</h1>
                     <p>Make sure all your tasks are organized so you can set the priorities and focus on important.</p>
                     <div class="tool-features">
                         <a href="#">
-                            <div class="box left" id="box1">  
+                            <div class="box" id="box1">  
                             <img src="/images/icons/chat.svg" alt="A speech bubble">
                             <h5>Comments on Tasks</h5>
                             <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
                             </div>
                         </a>
                         <a href="#">
-                            <div class="box left" id="box2">
+                            <div class="box" id="box2">
                             <img src="/images/icons/presentation.svg" alt="A Monitor">
                             <h5>Tasks Analytics</h5>
                             <p>Non imperdiet facilisis nulla tellus Morbi scelerisque eget adipiscing vulputate.</p>
@@ -93,21 +106,21 @@
                             </div>
                         </a>
                         <a href="#">
-                            <div class="box top left" id="box4">
+                            <div class="box" id="box4">
                             <img src="/images/icons/bell.svg" alt="A bell ringing">
                             <h5>Notifications</h5>
                             <p>Diam, suspendisse velit cras ac. Lobortis diam volutpat, eget pellentesque viverra.</p>
                             </div>
                         </a>
                         <a href="#">
-                            <div class="box top left" id="box5">
+                            <div class="box" id="box5">
                             <img src="/images/icons/test.svg" alt="Tasked checked">
                             <h5>Sections & Subtasks</h5>
                             <p>Mi feugiat hac id in. Sit elit placerat lacus nibh lorem ridiculus lectus.</p>
                             </div>
                         </a>
                         <a href="#">
-                        <div class="box top" id="box6">
+                        <div class="box" id="box6">
                             <img src="/images/icons/shield.svg" alt="A shield">
                             <h5>Data Security</h5>
                             <p>Aliquam malesuada neque eget elit nulla vestibulum nunc cras.</p>
@@ -117,7 +130,7 @@
                 </div>
             </section>
     
-            <section id="lightDark">
+            <section id="lightDark" class="section-margin">
                 <div class="textContainer">
                     <div class="dark">
                         <h1 id="switchBlack">Switch Between</h1>
@@ -170,7 +183,7 @@
                 </div>
             </section>
     
-            <section id="download">
+            <section id="download" class="section-margin">
                 <wrapper class="section-wrapper">
                     <div class="imageContainer">
                         <img class="imagePhone" src="/images/mobil.svg" alt="A picture on a mobil with the silicon-app showing" />
@@ -217,7 +230,7 @@
                 </wrapper>
             </section>
     
-            <section id="integrate">
+            <section id="integrate" class="section-margin">
                 <wrapper class="section-wrapper-integrate">
                 <div class="headlinesIntegrate">
                     <h1>Integrate Top Work Tools</h1>
@@ -266,7 +279,7 @@
             </wrapper>
             </section>
     
-            <section id="subscribe">
+            <section id="subscribe" class="section-margin">
                 <div class="section-wrapper-subscribe">
                     <div class="headline">
                         <h1>Don't Want to Miss Anything?</h1>
@@ -324,7 +337,7 @@
             </section>
         </main> 
     
-        <footer id="footer">
+        <footer id="footer" class="">
             <div class="container">
                 <div class="social-media">
                     <a class="btn-social" href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -337,8 +350,7 @@
         </footer>
     </wrapper>
 
-
-
+<script src="/js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -20,6 +20,26 @@
             justify-content: center;
             max-width: 1320px;
         }
+
+        hr
+        {
+            margin-block: 1.5rem;
+        }
+
+        .loginSocialContainer
+        {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            text-align: center;
+
+            .btn-container
+            {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
     }
 }
 
@@ -32,6 +52,21 @@
             .sign-in-form
             {
                 width: 34rem;
+            }
+        }
+
+        hr
+        {
+            margin-block: 2rem;
+        }
+
+        .loginSocialContainer
+        {
+
+            .btn-container
+            {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
             }
         }
     }

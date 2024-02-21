@@ -2,7 +2,21 @@ a {
     @include standard-text;
     color: $theme;
     text-decoration: none;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.nav {
+    @include standard-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $gray-600;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
 
     &:hover {
         text-decoration: underline;
@@ -12,9 +26,14 @@ a {
 .menu-link {
     @include text-nav;
     text-decoration: none;
-    transition: color 0.25s ease-in-out;
+    transition: color 0.15s ease-in-out;
 
-    &:hover,
+    &:hover
+    {
+        color: $theme;
+        text-decoration: underline;
+    }
+
     &:active,
     &:focus,
     

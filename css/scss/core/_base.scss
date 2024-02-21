@@ -56,8 +56,8 @@ main
     @include sm
     {
         max-width: 320px;
-        margin: 2rem;
     }
+
     @include md {
         max-width: 720px;
     }
@@ -73,4 +73,11 @@ main
     @include xxl {
         max-width: 1320px;
     }
+}
+
+.overlay
+{
+    opacity: 0.5;
+    filter: blur(5px); 
+    overflow-y: hidden;
 }

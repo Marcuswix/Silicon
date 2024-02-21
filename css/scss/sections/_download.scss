@@ -4,6 +4,7 @@
     {
         background-color: $gray-100;
         width: 100%;
+        padding-block: 2rem;
 
         .imageContainer
         {
@@ -58,6 +59,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-block: 1rem;
 
         .section-wrapper
         {
@@ -99,10 +101,6 @@
                     margin-top: 0.5rem;
                 }
                 
-                p
-                {
-                    margin: 0;
-                }
                 .btn-buy
                 {
                     margin-block: 1rem;
